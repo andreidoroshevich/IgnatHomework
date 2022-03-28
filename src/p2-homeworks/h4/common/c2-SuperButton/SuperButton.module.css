@@ -5,3 +5,8 @@
 .red {
     background: red;
 }
+
+button {
+    margin-top: 10px;
+    font-size: 10px;
+}
