@@ -10,15 +10,29 @@
 .navBarItem {
     margin-left: 15px;
     text-decoration: none;
+    color: black;
 }
 
 .navBar.active {
- left: 0px;
+    left: 0px;
 }
 
 .slideMenu {
     cursor: pointer;
-    color: blue;
+    color: green;
+    background-color: lightgrey;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 4px;
 }
 
+.notfound {
+    font-size: 48px;
+}
+
+.active {
+    color: blue;
+    margin-left: 15px;
+    text-decoration: none;
+}
 
