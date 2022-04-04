@@ -10,7 +10,7 @@ function HW6() {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+       setValue(restoreState<string>('editable-span-value', value))
     }
 
     return (
@@ -20,6 +20,9 @@ function HW6() {
 
             {/*should work (должно работать)*/}
             <div>
+                <span className={'s.pencil'}>
+                <img src={'https://cdn-icons-png.flaticon.com/512/124/124738.png'}/>
+                </span>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
