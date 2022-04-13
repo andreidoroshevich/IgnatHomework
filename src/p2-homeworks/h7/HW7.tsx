@@ -8,7 +8,7 @@ function HW7() {
     const [value, onChangeOption] = useState(arr[0])
 
     return (
-        <div>
+        <div style={{margin:'10px'}}>
             <hr/>
             homeworks 7
 
