@@ -1,4 +1,4 @@
-import {initialPeople, UserType} from "../HW8";
+import {UserType} from "../HW8";
 
 export type ActionType = {
     type: string,
