@@ -42,12 +42,13 @@ function Clock() {
 
     let stringDate
     if (date.getMonth() < 10) {
-        stringDate = date.getDate() + ".0" + date.getMonth() + "." + date.getFullYear()
+        stringDate = date.getDate() + ".0" + (date.getMonth() +1) + "." + date.getFullYear()
     } else if (date.getDate() < 10) {
-        stringDate = "0" + date.getDate() + "." + date.getMonth() + "." + date.getFullYear()
+        stringDate = "0" + date.getDate() + "." + (date.getMonth() +1) + "." + date.getFullYear()
     } else {
-        stringDate = date.getDate() + "." + date.getMonth() + "." + date.getFullYear()
+        stringDate = date.getDate() + "." + (date.getMonth() +1) + "." + date.getFullYear()
     }
+    console.log(date.getMonth()+1)
 
 
     return (
