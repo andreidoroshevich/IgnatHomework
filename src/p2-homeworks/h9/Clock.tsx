@@ -48,8 +48,6 @@ function Clock() {
     } else {
         stringDate = date.getDate() + "." + (date.getMonth() +1) + "." + date.getFullYear()
     }
-    console.log(date.getMonth()+1)
-
 
     return (
         <div>
