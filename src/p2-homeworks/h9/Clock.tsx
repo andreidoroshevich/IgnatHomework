@@ -42,7 +42,7 @@ function Clock() {
 
     let stringDate
     if (date.getMonth() < 10) {
-        stringDate = date.getDate() + ".0" + (date.getMonth() +1) + "." + date.getFullYear()
+        stringDate = "0" + date.getDate() + ".0" + (date.getMonth() +1) + "." + date.getFullYear()
     } else if (date.getDate() < 10) {
         stringDate = "0" + date.getDate() + "." + (date.getMonth() +1) + "." + date.getFullYear()
     } else {
