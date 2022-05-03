@@ -26,28 +26,49 @@ function Clock() {
         setShow(false)
     }
 
-    let stringTime
-    if (date.getHours() + 1 < 10 && date.getMinutes() < 10 && date.getSeconds()) {
-        stringTime = "0" + date.getHours() + 1 + ":0" + date.getMinutes() + ":0" + date.getSeconds()
-    } else if (date.getHours() + 1 < 10) {
-        stringTime = "0" + date.getHours() + 1 + ":" + date.getMinutes() + ":" + date.getSeconds()
-    } else if (date.getMinutes() < 10) {
-        stringTime = date.getHours() + 1 + ":0" + date.getMinutes() + ":" + date.getSeconds()
-    } else if (date.getSeconds() < 10) {
-        stringTime = date.getHours() + 1 + ":" + date.getMinutes() + ":0" + date.getSeconds()
+    let hours
+    let minutes
+    let seconds
+
+    if (date.getHours() + 1 < 10) {
+        hours = "0" + date.getHours() + 1
     } else {
-        stringTime = date.getHours() + 1 + ":" + date.getMinutes() + ":" + date.getSeconds()
+        hours = date.getHours() + 1
     }
 
-
-    let stringDate
-    if (date.getMonth() < 10) {
-        stringDate = "0" + date.getDate() + ".0" + (date.getMonth() + 1) + "." + date.getFullYear()
-    } else if (date.getDate() < 10) {
-        stringDate = "0" + date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear()
+    if (date.getMinutes() < 10) {
+        minutes = "0" + date.getMinutes()
     } else {
-        stringDate = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear()
+        minutes = date.getMinutes()
     }
+
+    if (date.getSeconds() < 10) {
+        seconds = "0" + date.getSeconds()
+    } else {
+        seconds = date.getSeconds()
+    }
+
+    const stringTime = hours + ":" + minutes + ":" + seconds
+
+
+    let day
+    let month
+    let year = date.getFullYear()
+
+    if (date.getDate() < 10) {
+        day = "0" + date.getDate()
+    } else {
+        day = date.getDate()
+    }
+
+    if (date.getMonth() + 1 < 10) {
+        month = "0" + date.getMonth()+1
+    } else {
+        month = date.getMonth()+1
+    }
+
+      const  stringDate = day + "." + month + "." + year
+
 
     return (
         <div>
