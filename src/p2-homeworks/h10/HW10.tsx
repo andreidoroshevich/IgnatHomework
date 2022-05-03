@@ -13,7 +13,7 @@ function HW10() {
         dispatch(loadingAC(true))
         window.setInterval(() => {
             dispatch(loadingAC(false))
-        }, 4000)
+        }, 2000)
     };
 
     return (
