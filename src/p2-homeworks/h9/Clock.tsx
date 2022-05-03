@@ -27,26 +27,26 @@ function Clock() {
     }
 
     let stringTime
-    if (date.getHours() < 10 && date.getMinutes() < 10 && date.getSeconds()) {
-        stringTime = "0" + date.getHours() + ":0" + date.getMinutes() + ":0" + date.getSeconds()
-    } else if (date.getHours() < 10) {
-        stringTime = "0" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+    if (date.getHours() + 1 < 10 && date.getMinutes() < 10 && date.getSeconds()) {
+        stringTime = "0" + date.getHours() + 1 + ":0" + date.getMinutes() + ":0" + date.getSeconds()
+    } else if (date.getHours() + 1 < 10) {
+        stringTime = "0" + date.getHours() + 1 + ":" + date.getMinutes() + ":" + date.getSeconds()
     } else if (date.getMinutes() < 10) {
-        stringTime = date.getHours() + ":0" + date.getMinutes() + ":" + date.getSeconds()
+        stringTime = date.getHours() + 1 + ":0" + date.getMinutes() + ":" + date.getSeconds()
     } else if (date.getSeconds() < 10) {
-        stringTime = date.getHours() + ":" + date.getMinutes() + ":0" + date.getSeconds()
+        stringTime = date.getHours() + 1 + ":" + date.getMinutes() + ":0" + date.getSeconds()
     } else {
-        stringTime = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+        stringTime = date.getHours() + 1 + ":" + date.getMinutes() + ":" + date.getSeconds()
     }
 
 
     let stringDate
     if (date.getMonth() < 10) {
-        stringDate = "0" + date.getDate() + ".0" + (date.getMonth() +1) + "." + date.getFullYear()
+        stringDate = "0" + date.getDate() + ".0" + (date.getMonth() + 1) + "." + date.getFullYear()
     } else if (date.getDate() < 10) {
-        stringDate = "0" + date.getDate() + "." + (date.getMonth() +1) + "." + date.getFullYear()
+        stringDate = "0" + date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear()
     } else {
-        stringDate = date.getDate() + "." + (date.getMonth() +1) + "." + date.getFullYear()
+        stringDate = date.getDate() + "." + (date.getMonth() + 1) + "." + date.getFullYear()
     }
 
     return (
