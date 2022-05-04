@@ -31,9 +31,9 @@ function Clock() {
     let seconds
 
     if (date.getHours() + 1 < 10) {
-        hours = "0" + date.getHours() + 1
+        hours = "0" + (date.getHours() + 1)
     } else {
-        hours = date.getHours() + 1
+        hours = (date.getHours() + 1)
     }
 
     if (date.getMinutes() < 10) {
@@ -62,9 +62,9 @@ function Clock() {
     }
 
     if (date.getMonth() + 1 < 10) {
-        month = "0" + date.getMonth()+1
+        month = "0" + (date.getMonth()+1)
     } else {
-        month = date.getMonth()+1
+        month = (date.getMonth()+1)
     }
 
       const  stringDate = day + "." + month + "." + year
