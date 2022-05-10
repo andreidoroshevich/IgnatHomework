@@ -25,7 +25,7 @@ function HW10() {
             {isLoading
                 ? (
                     <div className={style.preloader}>
-                    <img className={style.img} src={'http://www.vintage-hostel.com/wp-content/uploads/2017/01/loading5.gif'}/>
+                    <img alt={'pencil'} className={style.img} src={'http://www.vintage-hostel.com/wp-content/uploads/2017/01/loading5.gif'}/>
                     </div>
                 ) : (
                     <div>
