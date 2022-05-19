@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/IgnatHomework/static/css/main.82cdf422.chunk.css",
-    "main.js": "/IgnatHomework/static/js/main.e926bbef.chunk.js",
-    "main.js.map": "/IgnatHomework/static/js/main.e926bbef.chunk.js.map",
+    "main.css": "/IgnatHomework/static/css/main.51e18059.chunk.css",
+    "main.js": "/IgnatHomework/static/js/main.f96100a9.chunk.js",
+    "main.js.map": "/IgnatHomework/static/js/main.f96100a9.chunk.js.map",
     "runtime-main.js": "/IgnatHomework/static/js/runtime-main.fc562a4f.js",
     "runtime-main.js.map": "/IgnatHomework/static/js/runtime-main.fc562a4f.js.map",
-    "static/js/2.62a203f6.chunk.js": "/IgnatHomework/static/js/2.62a203f6.chunk.js",
-    "static/js/2.62a203f6.chunk.js.map": "/IgnatHomework/static/js/2.62a203f6.chunk.js.map",
+    "static/js/2.53e0a8b9.chunk.js": "/IgnatHomework/static/js/2.53e0a8b9.chunk.js",
+    "static/js/2.53e0a8b9.chunk.js.map": "/IgnatHomework/static/js/2.53e0a8b9.chunk.js.map",
     "index.html": "/IgnatHomework/index.html",
-    "precache-manifest.fce8a7d70cb10753c2b984c498268803.js": "/IgnatHomework/precache-manifest.fce8a7d70cb10753c2b984c498268803.js",
+    "precache-manifest.0992c306c67438278bf37dd5d81bf85c.js": "/IgnatHomework/precache-manifest.0992c306c67438278bf37dd5d81bf85c.js",
     "service-worker.js": "/IgnatHomework/service-worker.js",
-    "static/css/main.82cdf422.chunk.css.map": "/IgnatHomework/static/css/main.82cdf422.chunk.css.map",
-    "static/js/2.62a203f6.chunk.js.LICENSE.txt": "/IgnatHomework/static/js/2.62a203f6.chunk.js.LICENSE.txt"
+    "static/css/main.51e18059.chunk.css.map": "/IgnatHomework/static/css/main.51e18059.chunk.css.map",
+    "static/js/2.53e0a8b9.chunk.js.LICENSE.txt": "/IgnatHomework/static/js/2.53e0a8b9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fc562a4f.js",
-    "static/js/2.62a203f6.chunk.js",
-    "static/css/main.82cdf422.chunk.css",
-    "static/js/main.e926bbef.chunk.js"
+    "static/js/2.53e0a8b9.chunk.js",
+    "static/css/main.51e18059.chunk.css",
+    "static/js/main.f96100a9.chunk.js"
   ]
 }
