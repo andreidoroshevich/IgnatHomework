@@ -26,48 +26,18 @@ function Clock() {
         setShow(false)
     }
 
-    let hours
-    let minutes
-    let seconds
+    const get2DigitsString = (num: number) => num < 10 ? "0" + num : num
 
-    if (date.getHours() + 1 < 10) {
-        hours = "0" + (date.getHours() + 1)
-    } else {
-        hours = (date.getHours() + 1)
-    }
-
-    if (date.getMinutes() < 10) {
-        minutes = "0" + date.getMinutes()
-    } else {
-        minutes = date.getMinutes()
-    }
-
-    if (date.getSeconds() < 10) {
-        seconds = "0" + date.getSeconds()
-    } else {
-        seconds = date.getSeconds()
-    }
-
+    const hours = get2DigitsString(date.getHours())
+    const minutes = get2DigitsString(date.getMinutes())
+    const seconds = get2DigitsString(date.getSeconds())
     const stringTime = hours + ":" + minutes + ":" + seconds
 
 
-    let day
-    let month
-    let year = date.getFullYear()
-
-    if (date.getDate() < 10) {
-        day = "0" + date.getDate()
-    } else {
-        day = date.getDate()
-    }
-
-    if (date.getMonth() + 1 < 10) {
-        month = "0" + (date.getMonth()+1)
-    } else {
-        month = (date.getMonth()+1)
-    }
-
-      const  stringDate = day + "." + month + "." + year
+    const day = get2DigitsString(date.getDate())
+    const month = get2DigitsString(date.getMonth()+1)
+    const year = date.getFullYear()
+    const  stringDate = day + "." + month + "." + year
 
 
     return (
@@ -84,7 +54,7 @@ function Clock() {
                     {stringDate}
                 </div>
             )}
-            <div className={s.buttoncontainer}>
+            <div className={s.buttonContainer}>
                 <SuperButton className={`${s.button} ${s.start}`} onClick={start}>start</SuperButton>
                 <SuperButton className={`${s.button} ${s.stop}`} onClick={stop}>stop</SuperButton>
             </div>

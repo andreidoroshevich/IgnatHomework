@@ -1,5 +1,5 @@
-.dark {
-    background: dimgrey;
+.grey {
+    background: grey;
 }
 
 .dark-text {
@@ -20,4 +20,16 @@
 
 .some-text {
     color: darkslateblue;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.lightBlue {
+    background: lightblue;
+}
+
+.radio {
+    padding-top: 20px;
 }

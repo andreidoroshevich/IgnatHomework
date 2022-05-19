@@ -1,9 +1,12 @@
 import React from 'react'
 import Clock from './Clock'
+import AlternativeClock from "./AlternativeClock";
+import styles from "./styles.module.css"
+
 
 function HW9() {
     return (
-        <div>
+        <div className={styles.hw9}>
             <hr/>
             homeworks 9
 
@@ -12,7 +15,7 @@ function HW9() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeClock/>*/}
+            <div><AlternativeClock/></div>
             <hr/>
         </div>
     )
