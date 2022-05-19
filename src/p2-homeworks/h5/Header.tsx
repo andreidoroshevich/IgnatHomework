@@ -8,7 +8,12 @@ function Header() {
 
     return (
         <>
-            <span className={'slideMenu'} onClick={()=>{setMenuActive(!menuActive)}}>Navbar</span>
+
+
+
+            <div className={'slideMenu'} onClick={()=>{setMenuActive(!menuActive)}}>
+                <div></div>
+            </div>
             <div className={menuActive ? 'navBar active' :'navBar'}>
                 <div><NavLink className={({isActive})=> isActive ? 'active' : 'navBarItem'} to={'/PreJunior'}>PreJunior</NavLink></div>
                 <div><NavLink className={({isActive})=> isActive ? 'active' : 'navBarItem'} to={'/Junior'}>Junior</NavLink></div>

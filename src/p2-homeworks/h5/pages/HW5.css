@@ -4,7 +4,6 @@
     left: -100%;
     transition: left 0.5s linear;
     margin-top: 10px;
-    margin-bottom: 30px;
 }
 
 .navBarItem {
@@ -18,12 +17,36 @@
 }
 
 .slideMenu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    left: 20px;
     cursor: pointer;
+    z-index: 1;
     color: green;
     background-color: lightgrey;
-    border-radius: 5px;
-    font-size: 14px;
-    padding: 4px;
+    border-radius: 50%;
+}
+
+.slideMenu > div,
+.slideMenu > div::before,
+.slideMenu > div::after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #616161;
+}
+.slideMenu > div::before {
+    content: '';
+    top: -6px;
+}
+.slideMenu > div::after {
+    content: '';
+    top: 6px;
 }
 
 .notfound {
@@ -31,8 +54,9 @@
 }
 
 .active {
+    width: 100px;
+    height: 20px;
+
     color: blue;
-    margin-left: 15px;
-    text-decoration: none;
 }
 
