@@ -26,7 +26,8 @@ export const Request = () => {
     return (
         <div className={s.container}>
             <button className={s.button} onClick={makeRequest}>Make Request</button>
-            <div className={s.requestBlock}><SuperCheckbox className={s.checkBox} checked={checked} onChange={onChangeHandler}/>
+            <div className={s.requestBlock}><SuperCheckbox className={s.checkBox} checked={checked}
+                                                           onChange={onChangeHandler}/>
                 <div className={s.inputText}>Checked for success request</div>
             </div>
             <h1 className={s.requestData}>{requestData}</h1>
