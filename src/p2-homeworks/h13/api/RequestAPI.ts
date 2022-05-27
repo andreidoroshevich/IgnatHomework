@@ -7,8 +7,12 @@ export type ResponseType = {
     yourQuery: {}
 }
 
+const instance = axios.create({
+    baseURL: "https://neko-cafe-back.herokuapp.com/",
+})
+
 export const requestsAPI = {
     createPost: (success: boolean) => {
-        return axios.post<ResponseType>('https://neko-cafe-back.herokuapp.com/auth/test', {success})
+        return instance.post<ResponseType>('auth/test', {success})
     }
 }

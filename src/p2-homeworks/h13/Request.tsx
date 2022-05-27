@@ -2,6 +2,7 @@ import React, {ChangeEvent, useState} from 'react';
 import SuperCheckbox from '../h4/common/c3-SuperCheckbox/SuperCheckbox';
 import {requestsAPI} from "./api/RequestAPI";
 import s from "./style.module.scss"
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 export const Request = () => {
 
@@ -25,7 +26,7 @@ export const Request = () => {
 
     return (
         <div className={s.container}>
-            <button className={s.button} onClick={makeRequest}>Make Request</button>
+            <SuperButton className={s.button} onClick={makeRequest}>Make Request</SuperButton>
             <div className={s.requestBlock}><SuperCheckbox className={s.checkBox} checked={checked}
                                                            onChange={onChangeHandler}/>
                 <div className={s.inputText}>Checked for success request</div>
