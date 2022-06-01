@@ -14,10 +14,14 @@ export const Request = () => {
             .then(res => {
                 setRequestData(res.data.info)
             })
-            .catch(err => {
-                console.warn(JSON.stringify(err))
-                setRequestData(err.response.data.errorText)
-            })
+            .catch (error => {
+            error.response ? setRequestData(error.response.data.errorText) : setRequestData(error.message);
+        })
+
+    //         .catch(err => {
+    //             console.warn(JSON.stringify(err))
+    //             setRequestData(err.response.data.errorText)
+    //         })
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
